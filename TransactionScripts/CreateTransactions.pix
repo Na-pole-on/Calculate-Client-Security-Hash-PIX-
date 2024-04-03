@@ -172,7 +172,7 @@
                             <d13p1:Type>Dictionary&lt;System.String, System.Object&gt;</d13p1:Type>
                           </d13p1:ArgumentItem>
                           <d13p1:ArgumentItem z:Id="i25">
-                            <d13p1:ArgumentName>DataTableOfItems</d13p1:ArgumentName>
+                            <d13p1:ArgumentName>dt_WorkItems</d13p1:ArgumentName>
                             <d13p1:Expression>out_dt_transactions</d13p1:Expression>
                             <d13p1:Type>System.Data.DataTable</d13p1:Type>
                           </d13p1:ArgumentItem>
