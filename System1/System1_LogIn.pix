@@ -20,7 +20,7 @@
           <PropertyValue z:Id="i5">
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>login</_expression>
+            <_expression>str_login</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -260,7 +260,7 @@
                           <d7p1:IsEnabled>true</d7p1:IsEnabled>
                           <d7p1:IsPositionAttribute>false</d7p1:IsPositionAttribute>
                           <d7p1:Operator>Contains</d7p1:Operator>
-                          <d7p1:Value>String.Format("'{0}'", login)</d7p1:Value>
+                          <d7p1:Value>String.Format("'{0}'", str_login)</d7p1:Value>
                           <d7p1:_isCSharpExpression>true</d7p1:_isCSharpExpression>
                           <d7p1:_name>text()</d7p1:_name>
                         </d7p1:XPathAttribute>

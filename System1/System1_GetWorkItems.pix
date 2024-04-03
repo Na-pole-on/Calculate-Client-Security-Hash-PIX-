@@ -430,7 +430,7 @@
           <PropertyValue z:Id="i55">
             <PropertyName>Result</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>DataTableOfItems</_expression>
+            <_expression>dt_WorkItems</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -473,7 +473,7 @@
     <Parameter z:Id="i58">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
-      <Name>DataTableOfItems</Name>
+      <Name>dt_WorkItems</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Data.DataTable</TypeString>
     </Parameter>

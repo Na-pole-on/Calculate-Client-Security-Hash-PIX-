@@ -89,7 +89,7 @@
           <PropertyValue z:Id="i14">
             <PropertyName>URL</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>dict_config["WorkItemDetailsURL"].ToString() + "/" + WIID</_expression>
+            <_expression>dict_config["WorkItemDetailsURL"].ToString() + "/" + str_WIID</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -132,7 +132,7 @@
     <Parameter z:Id="i17">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
-      <Name>WIID</Name>
+      <Name>str_WIID</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
