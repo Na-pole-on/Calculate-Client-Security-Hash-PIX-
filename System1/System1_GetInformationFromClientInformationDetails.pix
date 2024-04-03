@@ -69,7 +69,7 @@
           <PropertyValue z:Id="i12">
             <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>Browser</_expression>
+            <_expression>web_acme</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -379,7 +379,7 @@
           <PropertyValue z:Id="i50">
             <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>Browser</_expression>
+            <_expression>web_acme</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -399,7 +399,7 @@
           <PropertyValue z:Id="i52">
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>Regex.Match(text, "(?&lt;=Client ID: )\w+")
+            <_expression>Regex.Match(text, @"(?&lt;=Client ID: )\w+")
     .ToString().Trim()</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />

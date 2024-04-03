@@ -69,7 +69,7 @@
           <PropertyValue z:Id="i12">
             <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>Sha</_expression>
+            <_expression>web_sha</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -440,7 +440,7 @@
           <PropertyValue z:Id="i57">
             <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>Sha</_expression>
+            <_expression>web_sha</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -467,7 +467,7 @@
           <PropertyValue z:Id="i60">
             <PropertyName>ResultValue</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression></_expression>
+            <_expression>str_hash</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -802,7 +802,7 @@
           <PropertyValue z:Id="i101">
             <PropertyName>Browser</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>str_hash</_expression>
+            <_expression>web_sha</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
