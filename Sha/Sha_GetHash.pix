@@ -89,7 +89,7 @@
           <PropertyValue z:Id="i14">
             <PropertyName>Keys</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>HashStr</_expression>
+            <_expression>str_hashStr</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -530,14 +530,14 @@
     <Parameter z:Id="i65">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
-      <Name>Hash</Name>
+      <Name>str_hash</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
     <Parameter z:Id="i66">
       <DefaultValueExpression></DefaultValueExpression>
       <Description></Description>
-      <Name>HashStr</Name>
+      <Name>str_hashStr</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.String</TypeString>
     </Parameter>
