@@ -407,7 +407,7 @@
           <PropertyValue z:Id="i53">
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>ClientId</_expression>
+            <_expression>str_clientId</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -435,7 +435,7 @@
           <PropertyValue z:Id="i56">
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>ClientName</_expression>
+            <_expression>str_clientName</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -463,7 +463,7 @@
           <PropertyValue z:Id="i59">
             <PropertyName>To</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>ClientCountry</_expression>
+            <_expression>str_clientCountry</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -483,7 +483,7 @@
           <PropertyValue z:Id="i61">
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>string.Join("-", new string[] { ClientId, ClientName, ClientCountry })</_expression>
+            <_expression>string.Join("-", new string[] { str_clientId, str_clientName, str_clientCountry })</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
