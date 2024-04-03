@@ -78,7 +78,7 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text>Подключение к браузеру по url</Text>
+        <Text>Подключение к Work Item </Text>
         <_activityFullName>Activities.Web.LaunchChrome</_activityFullName>
       </AbstractStep>
       <AbstractStep z:Id="i13" i:type="ExecutedStep">
@@ -403,7 +403,7 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text></Text>
+        <Text>Извлечение данных из таблицы</Text>
         <_activityFullName>Activities.Web.ScrapingData</_activityFullName>
       </AbstractStep>
       <AbstractStep z:Id="i52" i:type="ExecutedStep">
@@ -446,7 +446,7 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text></Text>
+        <Text>Получение данных со статусом WI5</Text>
         <_activityFullName>Activities.BaseCollections.DataTable.FilterDataTable</_activityFullName>
       </AbstractStep>
     </Childs>

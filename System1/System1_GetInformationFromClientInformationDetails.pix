@@ -48,7 +48,7 @@
           <PropertyValue z:Id="i9">
             <PropertyName>TabUrl</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>dict_config["AcmeTestURL"].ToString()</_expression>
+            <_expression>dict_config["AcmeTestURL"].ToString() + "/" + str_WIID</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -78,7 +78,7 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text></Text>
+        <Text>Подключиться к страницe Work Item Details</Text>
         <_activityFullName>Activities.Web.LaunchChrome</_activityFullName>
       </AbstractStep>
       <AbstractStep z:Id="i13" i:type="ExecutedStep">
@@ -388,7 +388,7 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text></Text>
+        <Text>Получить Client Information Details</Text>
         <_activityFullName>Activities.Web.GetText</_activityFullName>
       </AbstractStep>
       <AbstractStep z:Id="i51" i:type="ExecutedStep">
@@ -399,7 +399,7 @@
           <PropertyValue z:Id="i52">
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>Regex.Match(text, "[A-Z0-9]{7}")
+            <_expression>Regex.Match(text, "(?&lt;=Client ID: )\w+")
     .ToString().Trim()</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -416,7 +416,7 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text></Text>
+        <Text>Получение ClientID</Text>
         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
       </AbstractStep>
       <AbstractStep z:Id="i54" i:type="ExecutedStep">
@@ -427,7 +427,7 @@
           <PropertyValue z:Id="i55">
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>Regex.Match(text, @" \D{1,8} \D{1,8}\n")
+            <_expression>Regex.Match(text, @"(?&lt;=Client Name: )[\w ]+")
     .ToString().Trim()</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
@@ -444,7 +444,7 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text></Text>
+        <Text>Получение ClientName</Text>
         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
       </AbstractStep>
       <AbstractStep z:Id="i57" i:type="ExecutedStep">
@@ -455,8 +455,8 @@
           <PropertyValue z:Id="i58">
             <PropertyName>Value</PropertyName>
             <_dataType>Expression</_dataType>
-            <_expression>Regex.Match(text, @"Client Country:\D+")
-    .ToString().Split(":")[1].Trim()</_expression>
+            <_expression>Regex.Match(text, @"(?&lt;=Client Country: )\w+")
+    .ToString().Trim()</_expression>
             <_value i:nil="true" />
             <_xpathSettings xmlns:d7p1="http://schemas.datacontract.org/2004/07/BR.XPath" i:nil="true" />
           </PropertyValue>
@@ -472,7 +472,7 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text></Text>
+        <Text>Получение ClientCountry</Text>
         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
       </AbstractStep>
       <AbstractStep z:Id="i60" i:type="ExecutedStep">
@@ -499,7 +499,7 @@
         <EnableStatus>true</EnableStatus>
         <ExceptionHandlingMode>Default</ExceptionHandlingMode>
         <RetryCount>-1</RetryCount>
-        <Text></Text>
+        <Text>Получение строки для получения str_hash</Text>
         <_activityFullName>BR.Core.Base.Assign</_activityFullName>
       </AbstractStep>
     </Childs>
@@ -531,6 +531,13 @@
       <Name>dict_config</Name>
       <RunnerType>None</RunnerType>
       <TypeString>System.Collections.Generic.Dictionary`2[[System.String, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Object, System.Private.CoreLib, Version=7.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]</TypeString>
+    </Parameter>
+    <Parameter z:Id="i65">
+      <DefaultValueExpression></DefaultValueExpression>
+      <Description></Description>
+      <Name>str_WIID</Name>
+      <RunnerType>None</RunnerType>
+      <TypeString>System.String</TypeString>
     </Parameter>
   </Params>
   <TemplateVersion xmlns:d2p1="http://schemas.datacontract.org/2004/07/System" i:nil="true" />
